@@ -1,8 +1,6 @@
 # EVA – Evaluador Virtual Académico
 
-## 🧩 Definición del problema a resolver
-
-El proyecto busca facilitar la evaluación de respuestas académicas abiertas (por ejemplo, preguntas teóricas o conceptuales) que tradicionalmente requieren tiempo y criterio subjetivo por parte de los profesores. Los objetivos principales son:
+Este proyecto busca facilitar la evaluación de respuestas académicas abiertas (por ejemplo, preguntas teóricas o conceptuales) que tradicionalmente requieren tiempo y criterio subjetivo por parte de los profesores. Los objetivos principales son:
 
 - Reducir la carga de trabajo en la corrección de respuestas escritas.
 - Aumentar la objetividad y consistencia en las evaluaciones.
@@ -17,16 +15,9 @@ Se diseñó una aplicación web dividida en dos módulos principales:
 1. **Backend** que gestiona problemas académicos y usa modelos de lenguaje (LLMs) para evaluar las respuestas.
 2. **Frontend** que permite a los usuarios (profesores) gestionar preguntas, filtrar por criterios, y visualizar resultados.
 
-La evaluación automática se realiza a través de un LLM instructivo (modelo chat) de Fireworks.ai, con prompts diseñados para evaluar la respuesta del estudiante en base al tema, tipo de pregunta, solución esperada y criterios de evaluación.
+La evaluación automática se realiza a través de un LLM instructivo (modelos de chat) de Fireworks.ai, con prompts diseñados para evaluar la respuesta del estudiante en base al tema, tipo de pregunta, solución esperada y criterios de evaluación.
 
 ---
-
-<!-- ## ✨ Características
-
-**El sistema se desarrollo principalmente para**:
-
-- Gestionar problemas académicos con metadatos (tema, tipo, criterio, créditos…) # Con gestionar nos referimos a crear, guardar, editar, etc...
-- Evaluación automática de respuestas usando LLMs. # Usando los metadatos de los problemas como parte del contexto y las respuestas de los estudiantes se formula un prompt para que un LLM genere una evaluacion, la cual incluye una nota de 0 a 100, y una explicacion en caso de ser necesaria. -->
 
 ## 🧠 Tecnologías
 
@@ -48,9 +39,6 @@ La evaluación automática se realiza a través de un LLM instructivo (modelo ch
 
 > Se optó por estas herramientas debido a su simplicidad, rapidez de desarrollo y bajo overhead, ideales para un backend ligero centrado en una única funcionalidad principal: evaluar respuestas mediante LLMs.
 
----
-
-## 🧠 Justificación de herramientas
 
 | Herramienta         | Razón de uso                                                                 |
 |---------------------|------------------------------------------------------------------------------|
@@ -60,8 +48,6 @@ La evaluación automática se realiza a través de un LLM instructivo (modelo ch
 | **Next.js**         | Framework moderno de React con SSR/SSG, ideal para apps rápidas y SEO ready. |
 | **TailwindCSS**     | Permite diseñar interfaces limpias y responsivas sin salir del HTML.         |
 | **TypeScript**      | Mejora la mantenibilidad del frontend mediante tipado estático.              |
-
-> Se optó por estas herramientas debido a su simplicidad, rapidez de desarrollo y bajo overhead, ideales para un backend ligero centrado en una única funcionalidad principal: evaluar respuestas mediante LLMs.
 
 ---
 
